@@ -1,0 +1,93 @@
+.button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    background-color: #8CABFF;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 64px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #FFE8EC;
+    font-weight: medium;
+}
+
+
+.button:hover {
+    background-color: #4477CE;
+}
+
+.left-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 25%;
+    padding: 20px;
+    padding-left: 0px;
+}
+
+.right-align {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin: 20px;
+    /* justify-content: center; */
+    height: auto;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+}
+
+
+
+.search-block {
+    display: flex;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 2%;
+    width: 350px;
+    z-index: 10;
+    border: 2px solid gray;
+    justify-content: space-between;
+    background-color:  #FFFFFF;
+    border-radius: 100px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    
+}
+
+.search-bar {
+    all: initial;
+    height: auto;
+    font-size: medium;
+    border-radius: 10px;
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: large;
+}
+
+.search-button {
+    
+    color: #3C3C3C;
+    background-color: rgba(255, 255,255, 0.8);
+    border: none;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 100px;
+}
+
+/* Optional: Add hover effect to button */
+.search-button:hover {
+    background-color: #8ae3f3;
+    cursor: pointer;
+
+}
