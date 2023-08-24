@@ -11,10 +11,12 @@ import './MapComponent.css'
 const SearchBar = ({ onSearch }) => {
   const [address, setAddress] = useState("");
 
+  // This is called when the user will type something into the input field
   const handleInputChange = (event) => {
     setAddress(event.target.value);
   };
 
+  // when handleSearch is called, it triggers the onSearch function 
   const handleSearch = () => {
     onSearch(address);
   };
@@ -51,7 +53,7 @@ function MapComponent() {
   
   const apiKey = process.env.API_KEY;
   const [position, setPosition] = useState({ lat: 20.5937, lng: 78.9629 });
-  const [dataUrl, setDataUrl] = useState(0, 0, 0, 1);
+  const [dataUrl, setDataUrl] = useState(0);
 
 
   const handleScreenshot = () => {

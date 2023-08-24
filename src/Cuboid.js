@@ -6,15 +6,16 @@ import { Texture } from "@babylonjs/core";
 
 
 var columns = 6;
-var rows = 1; 
+var rows = 1;
 
-//alien sprite
+// UV Mapping for each face of the box
 var faceUV = new Array(6);
 
-//set all faces to same
+// Set UV coordinates for each face
 for (var i = 0; i < 6; i++) {
   faceUV[i] = new Vector4(i / columns, 0, (i + 1) / columns, 1 / rows);
 }
+
 
 const SpinningBox = (propss) => {
 
